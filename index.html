@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form updation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="mainParent">
+    <div class="Parent">
+        <div class="Title">
+            <h1 id="title">Personal Details</h1>
+            <p id="description">Details required for registration</p>
+        </div>
+
+        <div class="formDetails">
+            <form action="" type="submit" id="form" target="_self">
+                <label>First Name</label><br>
+                <input id="first-name" placeholder="first-name" type="text" required><br>
+                <label>Last Name</label><br>
+                <input id="last-name" placeholder="last-name" type="text" required><br>
+                <label>Gender</label><br>
+                <input placeholder="Gender" type="radio" value="male" name="gender">
+                <label>Male</label><br>
+                <input placeholder="Gender" type="radio" value="female" name="gender">
+                <label>Female</label><br>
+                <input placeholder="Gender" type="radio" value="not disclosed" name="gender">
+                <label>Prefer not to say</label><br>
+                <label>Food</label><br>
+                <Select placeholder="Food" required>
+                    <option value="">Select your food type</option><br>
+                    <option value="Indian">Indian</option><br>
+                    <option value="South-Indian">South Indian</option><br>
+                    <option value="Chinese">Chinese</option><br>
+                    <option value="Continental">Continental</option><br>
+                </Select><br>
+                <label>Address</label><br>
+                <input placeholder="Door no/House Name" type="text" required><br>
+                <input placeholder="Street Name" type="text" required><br>
+                <input placeholder="Town/City" type="text" required><br>
+                <label>Pincode</label><br>
+                <input placeholder="Enter your Pincode" type="number" minlength="6" required><br>
+                <label>State</label><br>
+                <input placeholder="Enter your State" type="text" required><br>
+                <label>Country</label><br>
+                <input placeholder="Enter your Country" type="text" required><br><br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+<hr>
+
+    <div class="ClientDetails">
+        <table class="table" >
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>Address line-1</th>
+                <th>Address line-2</th>
+                <th>Address line-3</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </table>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
